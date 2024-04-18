@@ -2,17 +2,17 @@ import javax.swing.JOptionPane;
 
 public class Main {
   public static void main(String[] args) {
-    int numero1, numero2;
-    double quociente, potencia;
+    int num1, num2;
+    double quotient, power;
 
-    numero1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro número inteiro:"));
-    numero2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo número inteiro:"));
+    num1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro número inteiro:"));
+    num2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo número inteiro:"));
 
-    quociente = (double) numero1 / numero2;
-    potencia = Math.pow(numero1, numero2);
+    quotient = (double) num1 / num2;
+    power = Math.pow(num1, num2);
 
-    String mensagem = "Quociente da divisão: " + quociente + "\n";
-    mensagem += "Potência: " + potencia;
+    String mensagem = "Quociente da divisão: " + quotient + "\n";
+    mensagem += "Potência: " + power;
 
     JOptionPane.showMessageDialog(null, mensagem);
   }
